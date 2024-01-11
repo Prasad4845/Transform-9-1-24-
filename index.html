@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .container{
+            border: 1px solid;
+            width: 1950px;
+            height: 1950px;
+            margin: 350px;
+            background-color: aquamarine;
+            
+            
+        }
+        .item{
+            border: 1px solid;
+            height: 32vh;
+            width: 30vh;
+            background-color: yellow;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 50px;
+            top: -1150px;
+            left: 1250px;
+        }
+        
+        input{
+            width: 30px;
+            height: 30px;
+            display: inline;
+            position: relative;
+            top: 25px;
+        }
+        .md{
+            position: relative;
+            left: 45px;
+            top: -25px;
+            border: 1px solid;
+            font-size: 50px;
+            width: 60vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 25px;
+            background-color: rgb(225, 221, 221);
+        }
+    
+        #b1:checked~.item{
+            transform: none;
+            transition: ease-in-out 2s;
+        }
+        #b2:checked~.item{
+            transform: rotate(10deg);
+            transition: ease-in-out 2s;
+        }
+        #b3:checked~.item{
+            transform: Rotate(45deg);
+            transition: ease-in-out 2s;
+        }
+        #b4:checked~.item{
+            transform: RotateX(100deg);
+            transition: ease-in-out 2s;
+        }
+        #b5:checked~.item{
+            transform: RotateY(45deg);
+            transition: ease-in-out 2s;
+        }
+        #b6:checked~.item{
+            transform: RotateY(80deg);
+            transition: ease-in-out 2s;
+        }
+        #b7:checked~.item{
+            transform: skew(20deg, 20deg);
+            transition: ease-in-out 2s;
+        }
+        #b8:checked~.item{
+            transform: skew(30deg , 30deg);
+            transition: ease-in-out 2s;
+        }
+        #b9:checked~.item{
+            transform: skewX(30deg);
+            transition: ease-in-out 2s;
+        }
+        #b10:checked~.item{
+            transform: scaleY(40deg);
+            transition: ease-in-out 2s;
+        }
+        #b11:checked~.item{
+            translate: (20px, 10px);
+            transition: ease-in-out 2s;
+        }
+        #b12:checked~.item{
+            translate: (20px,20px);
+            transition: ease-in-out 2s;
+        }
+        #b13:checked~.item{
+            scale: (2,2);
+            transition: ease-in-out 2s;
+        }
+        #b14:checked~.item{
+            scale: (2,3);
+            transition: ease-in-out 2s;
+        }
+        #b15:checked~.item{
+            transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+            transition: ease-in-out 2s;
+        }
+        #b16:checked~.item{
+            transform: matrix(0.866,0.7,-0.8,0.586,0,0);
+            transition: ease-in-out 2s;
+        }
+        #b17:checked~.item{
+            transform: matrix(0.866,0.7,-0.8,0.586,40,30);
+            transition: ease-in-out 2s;
+        }
+        .md:hover{
+            background-color: rgb(172, 108, 25);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <input type="radio" name="b" id="b1">
+        <div class="md">
+        <label for="b1" class="l">Transform : None</label>
+        </div>
+        
+            <input type="radio" name="b" id="b2">
+        <div class="md" id="md1">
+            <label for="b2" class="l">Transform : Rotate(10deg)</label>
+        </div>
+            <input type="radio" name="b" id="b3">
+            <div class="md" id="md1">
+            <label for="b3" class="l">Transform : Rotate(45deg)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b4">
+            <div class="md" id="md1">
+            <label for="b4" class="l">Transform : RotateX(100deg)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b5">
+            <div class="md" id="md1">
+            <label for="b5" class="l">Transform : RotateY(45deg)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b6">
+            <div class="md" id="md1">
+            <label for="b6" class="l">Transform : RotateY(80deg)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b7">
+            <div class="md" id="md1">
+            <label for="b7" class="l">Transform : Skew (20deg, 20deg)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b8">
+            <div class="md" id="md1">
+            <label for="b8" class="l">Transform : Skew (30deg, 30deg)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b9">
+            <div class="md" id="md1">
+            <label for="b9" class="l">Transform : Skew X(30deg)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b10">
+            <div class="md" id="md1">
+            <label for="b10" class="l">Transform : Skew Y(40deg)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b11">
+            <div class="md" id="md1">
+            <label for="b11" class="l">Translate : (20px, 10px)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b12">
+            <div class="md" id="md1">
+            <label for="b12" class="l">Translate : (20px, 20px)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b13">
+            <div class="md" id="md1">
+            <label for="b13" class="l">Scale : (2, 2)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b14">
+            <div class="md" id="md1">
+            <label for="b14" class="l">Scale : (2, 3)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b15">
+            <div class="md" id="md1">
+            <label for="b15" class="l">Transform : matrix(0.866,0.7,-0.8,0.866,0,0)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b16">
+            <div class="md" id="md1">
+            <label for="b16" class="l">Transform : matrix(0.866,0.7,-0.8,0.586,0,0)</label>
+        </div>
+        
+            <input type="radio" name="b" id="b17">
+            <div class="md" id="md1">
+            <label for="b17" class="l">Transform : matrix(0.866,0.7,-0.8,0.586,40,30)</label>
+        </div>
+        <div class="item" id="yel"> <br> <br> Hello  See here</div>
+
+
+    </div>
+</body>
+</html>
